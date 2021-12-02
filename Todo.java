@@ -1,6 +1,7 @@
 package Todo_List;
+import java.sql.DriverManager;
 import java.util.ArrayList;
-
+import javax.swing.JOptionPane;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -180,23 +181,25 @@ public class Todo extends javax.swing.JFrame {
         jTextArea.setText("");
         ArrayList<String> strings = new ArrayList<String>(databaseOperations.strings);
         for(int i = 0; i < strings.size();i++){
-            jTextArea.setText(jTextArea.getText()+"\n- "+strings.get(i));
+            System.out.println(strings.get(i));
+            jTextArea.setText(jTextArea.getText()+"\n-"+strings.get(i));
         }
     }
     
-    private void newTaskMouseClicked(java.awt.event.MouseEvent evt) {
-        
+    private void newTaskMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_newTaskMouseClicked
+        // TODO add your handling code here:
         String tasks = InputTask.getText();
         DatabaseOperation databaseOperations = new DatabaseOperation();
         databaseOperations.insert(tasks);
         InputTask.setText("");
         showList();   
-        
-    }
+        // databaseOperations.insert(tasks);
+    }//GEN-LAST:event_newTaskMouseClicked
 
-    private void formWindowActivated(java.awt.event.WindowEvent evt) {
+    private void formWindowActivated(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowActivated
+        
         showList();
-    }
+    }//GEN-LAST:event_formWindowActivated
 
     private void deleteAllMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_deleteAllMouseClicked
         DatabaseOperation databaseOperations = new DatabaseOperation();
