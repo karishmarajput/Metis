@@ -25,6 +25,7 @@ Clone this repo into a folder with the following directory structure
           │   │               Todo.java
           │   │               Credentials.java
           │   │               DatabaseOperation.java
+          │   │               User.java                                    
           │   │               README.md
           │   │             
 ```
