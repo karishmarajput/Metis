@@ -1,6 +1,18 @@
 # Metis ~ todo List Java
 
 This project creates an todo List in Java using swing which is connected to a MySQL Database.
+## Implementation
+### Insert
+Insert a new task in your todo list.<br>
+<img src="https://github.com/karishmarajput/Metis/blob/8d3f8d9aaf52779feadc39a6ab3d7ddcfa375935/todo1.png">
+
+### Delete
+Delete a specific task from your todo list.<br>
+<img src="https://github.com/karishmarajput/Metis/blob/8d3f8d9aaf52779feadc39a6ab3d7ddcfa375935/todo2.png">
+
+### Delete All
+Delete all the task from your todo list.<br>
+<img src="https://github.com/karishmarajput/Metis/blob/8d3f8d9aaf52779feadc39a6ab3d7ddcfa375935/todo3.png">
 
 ## Installation
 For running this project you will be needing [Maven](https://maven.apache.org/). Click here to [download](https://maven.apache.org/download.cgi)
